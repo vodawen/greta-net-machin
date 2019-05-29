@@ -1,0 +1,147 @@
+
+/*REFORMATAGE DU DEFAUT*/
+html, body{
+	margin:0;
+}
+li{
+	list-style: none;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+h2, h3, h1, p, li,div{
+	font-family: "Poppins";
+}
+
+/*CONCERNANT LA BARRE DU HAUT*/
+header{
+	height: 5em;
+	max-width:1200px;
+	margin:auto;
+	display:flex;
+	justify-content: space-between;
+}
+/*concernant la liste et le menu dans la barre du haut*/
+	header ul{
+		margin:0;
+		padding:0;
+		display:flex;
+		align-items:center;
+	}
+	header ul li{
+		margin: 0 2em ;
+	}
+	header div{
+		margin-left:1em;
+		display:flex;
+		align-items:center;
+	}
+	#mburger{
+		width:3em;
+		height:3em;
+		display:none;
+	}
+
+/*CONCERNANT LA GROSSE IMAGE AVEC DU TEXTE*/
+#img-container{
+	position: relative;
+    text-align: center;
+	width:100vw;
+	margin-left: 50%;
+    transform: translateX(-50%);
+	overflow: hidden;
+	background-color:#2ebfc2;
+}
+#mainImg{
+	/* background-image:url("img/header.jpg"); */
+	/* background-repeat:no-repeat; */
+	/* background-size:contain; */
+	/* background-position:center center; */
+	width:100%;
+	min-width:600px;
+	margin-left: 50%;
+    transform: translateX(-50%);
+	text-align:center;
+	overflow: hidden;
+}
+#mainImg div{
+	display:inline;
+}
+	/*le texte qu'il y a dedans*/
+	#txtcontainer{
+		position:absolute;
+		top:0;
+		bottom:0;
+		margin-left: 47%;
+		transform: translateX(-47%);
+		min-width:33%;
+	}
+	#txt1{
+		position:absolute;
+		left:23%;
+		top:26%;
+	}
+	#txt2{
+		position:absolute;
+		left:36%;
+		top:58%;
+	}
+
+	/*la liste cachée qu'il y a dedans*/
+	
+	#ulsecrete{
+		position:absolute;
+		top: 0;
+		bottom: 0;
+		margin:1em;
+		display:none;
+		flex-flow: column wrap;
+		justify-content: space-between;
+		text-align:left;
+	}
+	#ulsecrete li{
+		
+	}		
+	
+	
+	
+/*CONSERNANT LA SECTION D'EN BAS*/
+main{
+	max-width:1200px;
+	margin:auto;
+}
+main h2{
+	margin:1em 0 3em 1em;
+}
+main section{
+	display: flex;
+	flex-wrap:wrap;
+}
+main section div {
+	max-width:400px;
+	max-height:100px;
+	display:flex;
+	flex-wrap:nowrap;
+}
+main section div h3{
+	display:inline;
+	margin:0;
+}
+main div img{
+	height:100%;
+}
+
+/*LES MEDIA QUERY*/
+
+@media screen and (max-width: 640px) {
+  #mburger{
+    display:inline;
+  }
+  header ul{
+	  display:none;
+  }
+  #txtcontainer{
+	width:200px;
+  }
+}
